@@ -1,21 +1,18 @@
 # Catppuccin Next.js Template
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/banners/mocha_teal.png" alt="Catppuccin Mocha Banner" width="100%" />
-  <br />
   <p align="center">
     <strong>A beautifully themed Next.js template with Catppuccin palette.</strong>
   </p>
+  <br />
+  <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png" alt="Catppuccin Mocha Banner" width="100%" />
 </div>
 
 &nbsp;
 
 ## 🖼️ Preview
 
-> [!TIP]
-> Add your project screenshot here!
->
-> `![Project Preview](./public/preview.png)`
+![Project Preview](./public/preview.png)
 
 ## 🚀 Quick Start
 
