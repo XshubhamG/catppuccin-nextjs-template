@@ -1,0 +1,42 @@
+---
+description: Catppuccin color scheme and theming conventions for the notes app
+globs: **/*.{tsx,css}
+alwaysApply: false
+---
+
+# Catppuccin Theme – Latte (Light) / Mocha (Dark)
+
+Primary accent: **Teal**
+
+## Tailwind Color Utilities
+
+Use these Tailwind classes directly — they auto-switch between Latte and Mocha:
+
+### Palette colors
+`bg-rosewater`, `text-flamingo`, `border-pink`, `bg-mauve`, `text-red`,
+`bg-maroon`, `text-peach`, `bg-yellow`, `text-green`, `bg-teal`,
+`text-sky`, `bg-sapphire`, `text-blue`, `bg-lavender`
+
+### UI layers (background → foreground)
+`bg-crust` → `bg-mantle` → `bg-base` → `bg-surface0` → `bg-surface1` → `bg-surface2`
+
+### Typography
+- Body / headings: `text-foreground` or `text-text`
+- Subtitles, labels: `text-subtext1`, `text-subtext0`
+- Muted / subtle: `text-muted` or `text-overlay1`
+- Text on accent backgrounds: `text-on-primary`
+
+### Semantic aliases
+- Primary: `bg-primary`, `text-primary` (maps to teal)
+- Background: `bg-background` (maps to base)
+- Foreground: `text-foreground` (maps to text)
+- Borders: `border-border` (maps to surface0)
+- Focus ring: `ring-ring` (maps to lavender)
+- Status: `text-success`, `text-warning`, `text-destructive`, `text-info`
+
+## Rules
+- NEVER use hardcoded hex colors — always use Catppuccin token classes
+- NEVER use Tailwind `dark:` variant — theme switching is handled via CSS variables
+- Use `bg-surface0` or `bg-surface1` for cards, inputs, and interactive surfaces
+- Use `border-surface1` for borders between elements
+- Opacity modifiers work: `bg-teal/20`, `text-overlay2/50`
